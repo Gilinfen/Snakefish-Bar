@@ -1,5 +1,6 @@
-import { View } from "@tarojs/components";
+import { View, Image } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
+import Logo from "public/logo.jpg";
 import "./index.scss";
 
 export default function Index() {
@@ -7,5 +8,9 @@ export default function Index() {
     console.log("Page loaded.");
   });
 
-  return <View className="text-[#acc855] text-[80px]">Hello world!</View>;
+  return (
+    <View className="">
+      <Image src={Logo} className=" w-[1024px] h-[1024px] logo" />
+    </View>
+  );
 }
